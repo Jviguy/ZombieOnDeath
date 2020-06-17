@@ -5,4 +5,5 @@ branches:
 projects:
   ZombieOnDeath:
     path: ZombieOnDeath/
+    icon: icon/
 ...
