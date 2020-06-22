@@ -33,7 +33,10 @@ class Main extends PluginBase implements Listener
         $player = $e->getPlayer ();
         $pos = $player->getPosition ();
         $name = $player->getname ();
-        $e->setDeathMessage("{$name} Has Been Turned!");
+         if ($this->getConfig()->get("CustomDeathMessage") = 'On')
+ {                                                        
+            $e->setDeathMessage("{$name} Has Been Turned!");     
+ }                                                       
         /** @var \pocketmine\level\Position $pos */
         $zombie = new \pocketmine\entity\Zombie($pos->getLevel(), \pocketmine\entity\Zombie::createBaseNBT($pos, new \pocketmine\math\Vector3(0,0,0)));
         $zombie->spawnTo($player);
