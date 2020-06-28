@@ -1,11 +1,11 @@
 ---
 ##Edit these values to change custom death messages
 -config:
-  HasBeenTurnedDeathmessage: "On"
+  CustomDeathMessage: true
   ##edit these values to change what entity your spawning for whatever the hell u want lol
   publicwidth: "0.6"
   publicHeight: "1.8"
   publicEyeHieght: "1.62"
   NameTag: "Zombie"
-
+...
 
